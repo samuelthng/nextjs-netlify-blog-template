@@ -15,7 +15,6 @@ export default function BasicMeta({
   author,
   url,
 }: Props) {
-  console.log({ site_keywords: config.site_keywords });
   return (
     <Head>
       <title>
