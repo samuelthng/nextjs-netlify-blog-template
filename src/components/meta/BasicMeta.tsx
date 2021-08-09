@@ -15,6 +15,7 @@ export default function BasicMeta({
   author,
   url,
 }: Props) {
+  console.log({ site_keywords: config.site_keywords });
   return (
     <Head>
       <title>
@@ -29,7 +30,7 @@ export default function BasicMeta({
         content={
           keywords
             ? keywords.join(",")
-            : config.site_keywords.keyword.join(",")
+            : config.site_keywords?.keyword?.join(",")
         }
       />
       {author ? <meta name="author" content={author} /> : null}
